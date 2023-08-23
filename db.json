@@ -2,7 +2,7 @@
   "notes": [
     {
       "content": "the app state is in redux store",
-      "important": true,
+      "important": false,
       "id": 1
     },
     {
@@ -24,6 +24,11 @@
       "content": "koetos",
       "important": false,
       "id": 5
+    },
+    {
+      "content": "asas",
+      "important": true,
+      "id": 6
     }
   ]
 }
