@@ -20,7 +20,7 @@ const App = () => {
         <button type="submit">add</button>
       </form>
       {notes.map((note) => (
-        <li key={note.id} onClick={() => toggleImportance(note)}>
+        <li key={note.id}>
           {note.important ? <strong>{note.content}</strong> : note.content}
           <button onClick={() => toggleImportance(note.id)}>
             {note.important ? 'make not important' : 'make important'}
