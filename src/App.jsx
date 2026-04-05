@@ -35,8 +35,7 @@ const App = () => {
       </form>
       {notes.map((note) => (
         <li key={note.id} onClick={() => toggleImportance(note)}>
-          {note.content}
-          <strong> {note.important ? 'important' : ''}</strong>
+          {note.important ? <strong>{note.content}</strong> : note.content}
         </li>
       ))}
     </div>
