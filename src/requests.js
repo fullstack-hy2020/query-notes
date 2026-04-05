@@ -7,3 +7,19 @@ export const getNotes = async () => {
   }
   return await response.json()
 }
+
+export const createNote = async (newNote) => {
+  const options = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(newNote)
+  }
+ 
+  const response = await fetch(baseUrl, options)
+ 
+  if (!response.ok) {
+    throw new Error('Failed to create note')
+  }
+ 
+  return await response.json()
+}
